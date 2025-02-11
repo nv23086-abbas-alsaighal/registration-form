@@ -4,7 +4,7 @@ body {
   margin: 0;
   background-color: #1b1b32;
   color: #f5f6f7;
-  font-family: Tahoma;
+  font-family: Tahoma, sans-serif;
   font-size: 16px;
 }
 
@@ -42,31 +42,59 @@ select {
   margin: 10px 0 0 0;
   width: 100%;
   min-height: 2em;
-}
-
-input, textarea {
   background-color: #0a0a23;
   border: 1px solid #0a0a23;
   color: #ffffff;
+  padding: 0.5em;
+  font-size: 1rem;
 }
 
-.inline {
+input[type="radio"],
+input[type="checkbox"] {
   width: unset;
   margin: 0 0.5em 0 0;
   vertical-align: middle;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
 }
 
 input[type="submit"] {
   display: block;
   width: 60%;
   margin: 1em auto;
-  height: 2em;
+  height: 2.5em;
   font-size: 1.1rem;
   background-color: #3b3b4f;
-  border-color: white;
+  border: 1px solid white;
+  color: #ffffff;
   min-width: 300px;
+  cursor: pointer;
 }
 
-input[type="file"] {
-  padding: 1px 2px;
+input[type="submit"]:hover {
+  background-color: #5a5a7a;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+select {
+  appearance: none;
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  padding: 0.5em;
+}
+
+select:focus,
+input:focus,
+textarea:focus {
+  outline: 1px solid #ffffff;
 }
